@@ -67,12 +67,12 @@ prometheus_scrape_configs:
       target_label: instance
     - target_label: __address__
       replacement: 127.0.0.1:9115  # Blackbox exporter.
-- job_name: fedora
-  metrics_path: /private-will-move/metrics
+- job_name: fcos-updates-stg
+  metrics_path: /metrics
   scheme: https
   static_configs:
     - targets:
-      - "updates.coreos.stg.fedoraproject.org"
+      - "status.updates.coreos.stg.fedoraproject.org"
 
 alertmanager_external_url: "http://{{ ansible_host }}:9093"
 alertmanager_slack_api_url: "http://example.org"
