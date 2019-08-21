@@ -1,6 +1,6 @@
 ---
 prometheus_web_external_url: "http://{{ ansible_host }}:9090"
-prometheus_storage_retention: "14d"
+prometheus_storage_retention: "31d"
 
 prometheus_alertmanager_config:
   - scheme: http
