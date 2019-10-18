@@ -28,7 +28,7 @@ All applications should be running on their default ports.
 
 This repository consists of two playbooks:
   - [site.yml](site.yml) - which deploys basic prometheus/grafana stack without additional http proxies and with software listening on default ports
-  - [extras.yml](extras.yml) - adds influxdb as a long-term storage and deploys caddy http proxy. This will allow HTTPS connections to services like prometheus
+  - [extras.yml](extras.yml) - installs python, caddy http proxy, and setups random_exporter. This will allow HTTPS connections to services like prometheus. Before running it, golang is required to be installed on deployer machine.
 
 Such setup causes that mose of services can be accessed in two ways. As an example, prometheus can be accessed via:
   - **http**://demo.cloudalchemy.org:9090 - default way
