@@ -3,6 +3,12 @@ prometheus_version: "2.14.0-rc.0"
 prometheus_web_external_url: "http://{{ ansible_host }}:9090"
 prometheus_storage_retention: "31d"
 
+prometheus_remote_write:
+  - url: http://kubecon2019.observatorium.io/api/v1/receive
+    write_relabel_configs:
+    - replacement: cloudalchemy
+      target_label: cluster
+
 prometheus_alertmanager_config:
   - scheme: http
     static_configs:
