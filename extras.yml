@@ -9,7 +9,7 @@
 - name: Setup HTTP server
   hosts: web
   roles:
-  - antoiner77.caddy
+  - caddy_ansible.caddy_ansible
   pre_tasks:
   - name: Ensure webdirs exists
     file:
