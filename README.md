@@ -4,6 +4,12 @@
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![IRC](https://img.shields.io/badge/irc.freenode.net-%23cloudalchemy-yellow.svg)](https://kiwiirc.com/nextclient/#ircs://irc.freenode.net/#cloudalchemy)
 
+## DEPRECATION NOTICE
+
+This site is deprecated in favor of [demo.prometheus.io](https://demo.prometheus.io). Repository with current code is available at [github.com/prometheus/demo-site](https://github.com/prometheus/demo-site).
+
+All code stored here worked flawlessly as of 11 Jan 2020 and is left for historical purposes.
+
 ## [demo.cloudalchemy.org](https://demo.cloudalchemy.org)
 
 This repository provides an integration testing suite for our ansible roles as well as a demo site for [grafana](https://github.com/grafana/grafana), [prometheus](https://github.com/prometheus/prometheus), [alertmanager](https://github.com/prometheus/alertmanager) and [node_exporter](https://github.com/prometheus/node_exporter) (possibly more in the future).
